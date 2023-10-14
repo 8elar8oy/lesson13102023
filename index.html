@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            background-color: indianred;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav{
+            height: fit-content;
+            margin: 0 auto;
+            max-width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .buttonContainer{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+        }
+        .button{
+            margin-right: 50px;
+            padding: 10px 50px;
+            border-radius: 25px;
+            border: none;
+            background-color: #d1c87f;
+
+        }
+        .dropDown{
+            transform: scale(0);
+        }
+        .list{
+           margin: 10px 50px;
+            list-style-type: none;
+            text-decoration: none;
+        }
+        .link:hover  .dropDown{
+            transform: scale(1);
+        }
+        .link1:active .dropDown{
+            transform: scale(1);
+        }
+        .linkStyle{
+            margin: 5px 5px;
+            padding: ;
+            border-radius: 15px;
+            border: none;
+            background-color: #d1c87f;
+
+        }
+
+    </style>
+
+</head>
+<body>
+   <header class="header">
+       <nav class="nav">
+           <ul class="buttonContainer">
+               <li class="link">
+                   <span class=" button">home</span>
+                   <ul class="list">
+                       <li class="dropDown linkStyle">https://ru.wikipedia.org/wiki/Marilyn_Manson</li>
+                       <li class="dropDown button">https://ru.wikipedia.org/wiki/Marilyn_Manson</li>
+                       <li class="dropDown">https://ru.wikipedia.org/wiki/Marilyn_Manson</li>
+                       <li class="dropDown">https://ru.wikipedia.org/wiki/Marilyn_Manson</li>
+                       <li class="dropDown">https://ru.wikipedia.org/wiki/Marilyn_Manson</li>
+                   </ul>
+               </li>
+               <li class="link1">
+                   <span class="button">about</span>
+                   <ul class="list">
+                       <li class="dropDown">https</li>
+                   </ul>
+               </li>
+               <li class="link">
+                   <span class="button">contacts</span>
+                   <ul class="list">
+                       <li class="dropDown">https</li>
+                   </ul>
+               </li>
+           </ul>
+       </nav>
+   </header>
+
+</body>
+</html>
